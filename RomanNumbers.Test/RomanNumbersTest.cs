@@ -15,5 +15,12 @@ namespace RomanNumbers.Test
             var romanNumber = Convert(n);
             Assert.Equal(expected, romanNumber);
         }
+
+        [Fact(DisplayName = "When I convert 6 to roman number, then I get VI")]
+        public void TestSix()
+        {
+            var romanNumber = Convert(6);
+            Assert.Equal("VI", romanNumber);
+        }
     }
 }

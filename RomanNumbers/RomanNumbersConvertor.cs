@@ -7,7 +7,7 @@
             {
                 <= 3 => new string('I', (int)n),
                 4 => "IV",
-                _ => "V"
+                _ => Convert(n - 5)
             };
     }
 }
