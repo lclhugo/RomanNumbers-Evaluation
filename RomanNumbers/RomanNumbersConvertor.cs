@@ -9,7 +9,8 @@
                 4 => "IV",
                 <= 8 => "V" + Convert(n - 5),
                 9 => "IX",
-                _ => "X"
+                >= 10 => "X" + Convert(n - 10),
+                //_ => "Invalid input. Please enter a valid positive integer."
             };
     }
 }
