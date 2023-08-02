@@ -22,5 +22,37 @@ namespace RomanNumbers.Test
             var romanNumber = Convert(6);
             Assert.Equal("VI", romanNumber);
         }
+
+        [Fact(DisplayName = "When I convert 7 to a Roman number, then I get VII")]
+        public void TestSeven()
+        {
+            var number = 7;
+            var romanNumber = RomanNumbersConvertor.Convert((uint)number);
+            Assert.Equal("VII", romanNumber);
+        }
+
+        [Fact(DisplayName = "When I convert 8 to a Roman number, then I get VIII")]
+        public void TestEight()
+        {
+            var number = 8;
+            var romanNumber = RomanNumbersConvertor.Convert((uint)number);
+            Assert.Equal("VIII", romanNumber);
+        }
+
+        [Fact(DisplayName = "When I convert 9 to a Roman number, then I get IX")]
+        public void TestNine()
+        {
+            var number = 9;
+            var romanNumber = RomanNumbersConvertor.Convert((uint)number);
+            Assert.Equal("IX", romanNumber);
+        }
+
+        [Fact(DisplayName = "When I convert 10 to a Roman number, then I get X")]
+        public void TestTen()
+        {
+            var number = 10;
+            var romanNumber = RomanNumbersConvertor.Convert((uint)number);
+            Assert.Equal("X", romanNumber);
+        }
     }
 }
